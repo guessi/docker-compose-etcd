@@ -2,8 +2,8 @@
 
 ### Prerequisites
 
-- Docker v1.12.6 (or newer)
-- Docker Compose v1.13.0 (or newer)
+- Docker-CE 17.12+
+- Docker Compose v1.21.0+
 
 
 ### Usage
