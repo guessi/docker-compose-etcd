@@ -2,19 +2,17 @@
 
 ### Prerequisites
 
-- Docker-CE 17.12+
-- Docker Compose v1.21.0+
+- Docker-CE 18.06+
+- Docker Compose v1.23.1+
 
 
 ### Usage
 
-    $ docker-compose up
+    $ docker-compose up -d
 
-    $ docker exec -it dockercomposeetcd_etcd-1_1 etcdctl set secret password
+    $ docker exec -it etcd1 etcdctl set secret password
 
-    $ docker exec -it dockercomposeetcd_etcd-1_1 etcdctl ls
-
-    $ docker exec -it dockercomposeetcd_etcd-1_1 etcdctl get /secret
+    $ docker exec -it etcd1 etcdctl get /secret
 
 
 ### Docker Images
