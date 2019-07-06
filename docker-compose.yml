@@ -3,13 +3,13 @@ version: '3'
 services:
     etcd-1:
         container_name: etcd1
-        image: quay.io/coreos/etcd:v3.1.20
+        image: quay.io/coreos/etcd:v3.3
         entrypoint: /usr/local/bin/etcd
         command:
             - '--name=etcd-1'
             - '--initial-advertise-peer-urls=http://etcd-1:2380'
-            - '--listen-peer-urls=http://etcd-1:2380'
-            - '--listen-client-urls=http://etcd-1:2379,http://localhost:2379'
+            - '--listen-peer-urls=http://0.0.0.0:2380'
+            - '--listen-client-urls=http://0.0.0.0:2379'
             - '--advertise-client-urls=http://etcd-1:2379'
             - '--initial-cluster-token=mys3cr3ttok3n'
             - '--heartbeat-interval=250'
@@ -22,13 +22,13 @@ services:
             - etcd1:/etcd_data
     etcd-2:
         container_name: etcd2
-        image: quay.io/coreos/etcd:v3.1.20
+        image: quay.io/coreos/etcd:v3.3
         entrypoint: /usr/local/bin/etcd
         command:
             - '--name=etcd-2'
             - '--initial-advertise-peer-urls=http://etcd-2:2380'
-            - '--listen-peer-urls=http://etcd-2:2380'
-            - '--listen-client-urls=http://etcd-2:2379,http://localhost:2379'
+            - '--listen-peer-urls=http://0.0.0.0:2380'
+            - '--listen-client-urls=http://0.0.0.0:2379'
             - '--advertise-client-urls=http://etcd-2:2379'
             - '--initial-cluster-token=mys3cr3ttok3n'
             - '--heartbeat-interval=250'
@@ -41,13 +41,13 @@ services:
             - etcd2:/etcd_data
     etcd-3:
         container_name: etcd3
-        image: quay.io/coreos/etcd:v3.1.20
+        image: quay.io/coreos/etcd:v3.3
         entrypoint: /usr/local/bin/etcd
         command:
             - '--name=etcd-3'
             - '--initial-advertise-peer-urls=http://etcd-3:2380'
-            - '--listen-peer-urls=http://etcd-3:2380'
-            - '--listen-client-urls=http://etcd-3:2379,http://localhost:2379'
+            - '--listen-peer-urls=http://0.0.0.0:2380'
+            - '--listen-client-urls=http://0.0.0.0:2379'
             - '--advertise-client-urls=http://etcd-3:2379'
             - '--initial-cluster-token=mys3cr3ttok3n'
             - '--heartbeat-interval=250'
