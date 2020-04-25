@@ -10,13 +10,15 @@
 
     $ docker-compose up -d
 
-    $ docker exec -it etcd1 etcdctl set secret password
+    $ docker exec -it etcd1 etcdctl endpoint health
 
-    $ docker exec -it etcd1 etcdctl get /secret
+    $ docker exec -it etcd1 etcdctl put secret password
+
+    $ docker exec -it etcd1 etcdctl get secret
 
 
 ### Docker Images
 
-- [etcd v3.3.x][docker-image-etcd]
+- [etcd v3.4.7][docker-image-etcd]
 
 [docker-image-etcd]: https://quay.io/repository/coreos/etcd?tab=tags
