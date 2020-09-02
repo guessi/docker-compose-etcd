@@ -3,7 +3,7 @@ version: '3'
 services:
     etcd-1:
         container_name: etcd1
-        image: quay.io/coreos/etcd:v3.4.7
+        image: quay.io/coreos/etcd:v3.4.13
         entrypoint: /usr/local/bin/etcd
         command:
             - '--name=etcd-1'
@@ -22,7 +22,7 @@ services:
             - etcd1:/etcd_data
     etcd-2:
         container_name: etcd2
-        image: quay.io/coreos/etcd:v3.4.7
+        image: quay.io/coreos/etcd:v3.4.13
         entrypoint: /usr/local/bin/etcd
         command:
             - '--name=etcd-2'
@@ -41,7 +41,7 @@ services:
             - etcd2:/etcd_data
     etcd-3:
         container_name: etcd3
-        image: quay.io/coreos/etcd:v3.4.7
+        image: quay.io/coreos/etcd:v3.4.13
         entrypoint: /usr/local/bin/etcd
         command:
             - '--name=etcd-3'
