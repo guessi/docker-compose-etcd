@@ -49,6 +49,6 @@
 
 ### Docker Images
 
-- [etcd v3.5.2][docker-image-etcd]
+- [etcd v3.5.3][docker-image-etcd]
 
 [docker-image-etcd]: https://quay.io/repository/coreos/etcd?tab=tags
