@@ -47,8 +47,8 @@
     secret
     password
 
-### Docker Images
+### Container Images
 
-- [etcd][docker-image-etcd]
+- [etcd][etcd-repository]
 
-[docker-image-etcd]: https://quay.io/repository/coreos/etcd?tab=tags
+[etcd-repository]: https://quay.io/repository/coreos/etcd?tab=tags
