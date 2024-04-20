@@ -2,7 +2,7 @@
 
 ### Prerequisites
 
-- Docker Engine 20.10+
+- Docker 25.0+
 
 ### Usage
 
