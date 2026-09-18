@@ -49,6 +49,6 @@
 
 ### Container Images
 
-- [etcd][etcd-repository]
+- [quay.io/coreos/etcd:v3.5.21][etcd-repository]
 
 [etcd-repository]: https://quay.io/repository/coreos/etcd?tab=tags
